@@ -1,0 +1,18 @@
+# ============================================================
+#  PROYECTO: Analítica de Negocios — Saga Falabella Perú
+#  MÓDULO:   Modelo Predictivo Simple
+# ============================================================
+
+# LIBRERÍAS REQUERIDAS
+# Ejecuta este comando en tu terminal ANTES de correr el modelo:
+#
+#   pip install -r requirements.txt
+
+pandas==2.1.0
+numpy==1.26.0
+scikit-learn==1.3.0
+matplotlib==3.8.0
+
+# tkinter ya viene instalado con Python por defecto.
+# Si usas macOS y no tienes tkinter, instala con:
+#   brew install python-tk
