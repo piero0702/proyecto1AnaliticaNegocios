@@ -1,5 +1,5 @@
 =====================================================================
-  PROYECTO: Analítica de Negocios — Saga Falabella Perú
+  PROYECTO: Analítica de Negocios — Oechsle Perú
   SECCIÓN 7: Reflexión sobre Big Data
   ALUMNO:   Cesar Andrés
   CURSO:    Analítica de Negocios — Ingeniería de Sistemas
@@ -19,9 +19,9 @@ Big Data se define por las 5 V:
   Veracidad    → Calidad y confiabilidad de los datos recibidos
   Valor        → Capacidad de extraer insights accionables del dato
 
-En el sector retail, Saga Falabella Perú genera diariamente millones
+En el sector retail, Oechsle Perú genera diariamente millones
 de eventos: clics en su app, transacciones POS en tienda, búsquedas
-en falabella.com.pe, interacciones en redes sociales, lecturas de
+en oechsle.com.pe, interacciones en redes sociales, lecturas de
 código de barras en almacén y señales de sensores IoT en tiendas.
 El volumen y la velocidad de estos datos superan con creces lo que
 una hoja de cálculo o una base de datos relacional convencional puede
@@ -30,7 +30,7 @@ opción tecnológica, sino una necesidad competitiva.
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  7.2  ¿CÓMO APLICARÍA BIG DATA EN SAGA FALABELLA PERÚ?
+  7.2  ¿CÓMO APLICARÍA BIG DATA EN OECHSLE PERÚ?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Aunque el presente proyecto trabaja con un dataset simulado de 1,200
@@ -58,7 +58,7 @@ cada componente escalaría en un entorno de Big Data real:
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  7.3  ARQUITECTURA DE DATOS PROPUESTA PARA FALABELLA
+  7.3  ARQUITECTURA DE DATOS PROPUESTA PARA OECHSLE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ┌─────────────────────────────────────────────────────────────┐
@@ -97,7 +97,7 @@ cada componente escalaría en un entorno de Big Data real:
 Esta arquitectura Lambda combina procesamiento batch (para análisis
 históricos profundos) con procesamiento streaming (para decisiones
 en tiempo real), lo cual es el estándar en empresas retail de clase
-mundial como Amazon, Walmart y el propio grupo Falabella a nivel
+mundial como Amazon, Walmart y el propio grupo Oechsle a nivel
 corporativo.
 
 
@@ -107,7 +107,7 @@ corporativo.
 
 ESCENARIO 1 — Predicción de abandono de clientes (Churn Prediction)
 ───────────────────────────────────────────────────────────────────
-  Problema: Falabella pierde clientes Gold y Platinum sin anticiparlo.
+  Problema: Oechsle pierde clientes Gold y Platinum sin anticiparlo.
   Solución Big Data:
     · Recolectar 200+ señales de comportamiento: frecuencia de visitas,
       tiempo entre compras, apertura de emails, uso de la app.
@@ -121,7 +121,7 @@ ESCENARIO 1 — Predicción de abandono de clientes (Churn Prediction)
 
 ESCENARIO 2 — Optimización dinámica de precios en e-commerce
 ──────────────────────────────────────────────────────────────
-  Problema: Falabella pierde ventas en electrónica por precios
+  Problema: Oechsle pierde ventas en electrónica por precios
             estáticos frente a competidores como Ripley y Mercado Libre.
   Solución Big Data:
     · Web scraping automatizado de precios de competencia cada 15 min.
@@ -161,7 +161,7 @@ ESCENARIO 4 — Gestión de inventario predictiva con IoT
 
 ESCENARIO 5 — Análisis de sentimiento de reseñas y redes sociales
 ──────────────────────────────────────────────────────────────────
-  Problema: Falabella recibe miles de reseñas y menciones diarias en
+  Problema: Oechsle recibe miles de reseñas y menciones diarias en
             redes sociales sin procesarlas sistemáticamente.
   Solución Big Data:
     · Ingesta de Twitter/X, Facebook, Instagram y reseñas de la app
@@ -210,7 +210,7 @@ Big Data no es una tecnología por sí sola, sino un enfoque para
 extraer valor de datos que por su volumen, velocidad o variedad
 superan las capacidades de las herramientas tradicionales.
 
-Para Saga Falabella Perú, la adopción de Big Data representaría un
+Para Oechsle Perú, la adopción de Big Data representaría un
 salto desde el análisis descriptivo retrospectivo (¿qué pasó?) hacia
 la analítica predictiva y prescriptiva en tiempo real (¿qué pasará?
 ¿qué debemos hacer ahora?).
@@ -218,7 +218,7 @@ la analítica predictiva y prescriptiva en tiempo real (¿qué pasará?
 Los escenarios presentados — churn prediction, precios dinámicos,
 personalización, inventario predictivo y análisis de sentimiento —
 no son aspiraciones futuristas sino prácticas que empresas del mismo
-sector (Amazon, Alibaba, el propio grupo Falabella en Chile) ya
+sector (Amazon, Alibaba, el propio grupo Oechsle en Chile) ya
 implementan hoy, y que representarían una ventaja competitiva
 decisiva en el mercado retail peruano.
 

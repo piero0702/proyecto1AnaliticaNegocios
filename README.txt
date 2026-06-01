@@ -1,5 +1,5 @@
 =====================================================================
-  PROYECTO: Analítica de Negocios — Saga Falabella Perú
+  PROYECTO: Analítica de Negocios — Oechsle Perú
   MÓDULO:   Modelo Predictivo Simple (Regresión Lineal Múltiple)
   ALUMNO:   Cesar Andrés
   CURSO:    Analítica de Negocios — Ingeniería de Sistemas
@@ -9,7 +9,7 @@ DESCRIPCIÓN
 -----------
 Este script implementa un modelo de regresión lineal múltiple para
 predecir el ticket promedio de compra (en soles) de clientes de
-Saga Falabella Perú, a partir de variables de perfil de cliente,
+Oechsle Perú, a partir de variables de perfil de cliente,
 categoría de producto, canal de venta y comportamiento de compra.
 
 
@@ -18,7 +18,7 @@ ARCHIVOS DEL PROYECTO
   modelo_predictivo.py     → Script principal (ejecutar este)
   requirements.txt         → Librerías necesarias
   README.txt               → Este archivo
-  dataset_falabella.csv    → Se genera al ejecutar el script
+  dataset_oechsle.csv      → Se genera al ejecutar el script
   evaluacion_modelo.png    → Se genera al ejecutar el script
 
 
@@ -67,7 +67,7 @@ VARIABLES PREDICTORAS
   region              → Lima, Arequipa, Trujillo, Piura, Cusco
   segmento_cliente    → Básico, Silver, Gold, Platinum
   compras_previas     → número de transacciones históricas (1-50)
-  meses_cliente       → antigüedad en programa Falabella (1-84)
+  meses_cliente       → antigüedad en programa Oechsle (1-84)
   descuento_aplicado  → porcentaje de descuento (0-40%)
   productos_distintos → variedad de ítems en la compra (1-14)
 

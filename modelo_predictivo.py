@@ -1,6 +1,6 @@
 """
 =============================================================
-  PROYECTO: Analítica de Negocios - Saga Falabella Perú
+  PROYECTO: Analítica de Negocios - Oechsle Perú
   MÓDULO:   Modelo Predictivo Simple
   ALUMNO:   Cesar Andrés (Sección: Modelo Predictivo)
   CURSO:    Analítica de Negocios - Ingeniería de Sistemas
@@ -16,7 +16,7 @@ VARIABLES PREDICTORAS:
   - Canal de venta          (Online, Tienda física)
   - Región                  (Lima, Arequipa, Trujillo, Piura, Cusco)
   - Compras previas         (número de transacciones históricas)
-  - Meses como cliente      (antigüedad en el programa Falabella)
+  - Meses como cliente      (antigüedad en el programa Oechsle)
   - Descuento aplicado (%)  (porcentaje de descuento en la compra)
   - Productos distintos     (variedad de ítems en la compra)
 """
@@ -124,7 +124,7 @@ def entrenar_modelo(df):
 # ──────────────────────────────────────────────
 def imprimir_reporte(metricas, coeficientes):
     print("\n" + "="*55)
-    print("  MODELO PREDICTIVO — SAGA FALABELLA PERÚ")
+    print("  MODELO PREDICTIVO — OECHSLE PERÚ")
     print("  Regresión Lineal Múltiple | scikit-learn")
     print("="*55)
     print(f"\n  Registros de entrenamiento : {metricas['n_train']}")
@@ -152,7 +152,7 @@ def imprimir_reporte(metricas, coeficientes):
 # ──────────────────────────────────────────────
 def mostrar_graficos(metricas, coeficientes, y_test, y_pred):
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
-    fig.suptitle('Saga Falabella Perú — Evaluación del Modelo Predictivo',
+    fig.suptitle('Oechsle Perú — Evaluación del Modelo Predictivo',
                  fontsize=13, fontweight='bold', y=1.02)
 
     # --- Gráfico 1: Real vs Predicho ---
@@ -201,8 +201,8 @@ def mostrar_graficos(metricas, coeficientes, y_test, y_pred):
     ax3.invert_yaxis()
 
     plt.tight_layout()
-    plt.savefig('evaluacion_modelo_falabella.png', dpi=150, bbox_inches='tight')
-    print("  Gráficos guardados en: evaluacion_modelo_falabella.png")
+    plt.savefig('evaluacion_modelo_oechsle.png', dpi=150, bbox_inches='tight')
+    print("  Gráficos guardados en: evaluacion_modelo_oechsle.png")
     plt.show()
 
 
@@ -255,7 +255,7 @@ def lanzar_interfaz():
     MUTED   = '#6B7280'
 
     root = tk.Tk()
-    root.title("Predictor de Ticket — Saga Falabella Perú")
+    root.title("Predictor de Ticket — Oechsle Perú")
     root.geometry("1100x760")
     root.configure(bg=BG)
     root.resizable(True, True)
@@ -263,7 +263,7 @@ def lanzar_interfaz():
     # ── Header ──
     header = tk.Frame(root, bg=AZUL, pady=14)
     header.pack(fill='x')
-    tk.Label(header, text="Saga Falabella Perú",
+    tk.Label(header, text="Oechsle Perú",
              font=('Helvetica', 16, 'bold'), fg='white', bg=AZUL).pack()
     tk.Label(header, text="Modelo Predictivo de Ticket Promedio de Compra",
              font=('Helvetica', 10), fg='#B5D4F4', bg=AZUL).pack()
@@ -339,7 +339,7 @@ def lanzar_interfaz():
                                ['Lima','Arequipa','Trujillo','Piura','Cusco'])
     vars_tk['compras'] = campo(frame, "Número de compras previas",
                                 tipo='slider', desde=1, hasta=50, default=15)
-    vars_tk['meses']   = campo(frame, "Meses como cliente en Falabella",
+    vars_tk['meses']   = campo(frame, "Meses como cliente en Oechsle",
                                 tipo='slider', desde=1, hasta=84, default=24)
 
     seccion("Detalles de la compra")
@@ -467,10 +467,10 @@ def lanzar_interfaz():
 #  6. MAIN — ejecuta todo en orden
 # ──────────────────────────────────────────────
 if __name__ == '__main__':
-    print("\n Generando dataset simulado de Falabella Perú...")
+    print("\n Generando dataset simulado de Oechsle Perú...")
     df = generar_dataset(n=1200)
-    df.to_csv('dataset_falabella.csv', index=False)
-    print(f"  Dataset guardado: dataset_falabella.csv ({len(df)} registros)")
+    df.to_csv('dataset_oechsle.csv', index=False)
+    print(f"  Dataset guardado: dataset_oechsle.csv ({len(df)} registros)")
 
     print("\n Entrenando modelo de regresión lineal múltiple...")
     modelo, metricas, coeficientes, columnas, y_test, y_pred = entrenar_modelo(df)

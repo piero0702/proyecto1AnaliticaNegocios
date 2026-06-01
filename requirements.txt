@@ -1,5 +1,5 @@
 # ============================================================
-#  PROYECTO: Analítica de Negocios — Saga Falabella Perú
+#  PROYECTO: Analítica de Negocios — Oechsle Perú
 #  MÓDULO:   Modelo Predictivo Simple
 # ============================================================
 

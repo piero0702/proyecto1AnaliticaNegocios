@@ -1,5 +1,5 @@
 """
-Interfaz web — Predictor de Ticket Saga Falabella Perú
+Interfaz web — Predictor de Ticket Oechsle Perú
 Ejecutar: python3 interfaz.py
 Abre automáticamente en el navegador en http://localhost:8080
 """
@@ -36,7 +36,7 @@ HTML = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Predictor de Ticket — Saga Falabella Perú</title>
+<title>Predictor de Ticket — Oechsle Perú</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Segoe UI', Helvetica, sans-serif; background: #F7F8FA; color: #1a1a2e; }
@@ -91,7 +91,7 @@ HTML = """<!DOCTYPE html>
 <body>
 
 <header>
-  <h1>Saga Falabella Perú</h1>
+  <h1>Oechsle Perú</h1>
   <p>Modelo Predictivo · Ticket Promedio de Compra</p>
   <small>Regresión Lineal Múltiple &nbsp;·&nbsp; R² = 88.3% &nbsp;·&nbsp; MAE = S/ 93.46</small>
 </header>
