@@ -39,51 +39,51 @@ HTML = """<!DOCTYPE html>
 <title>Predictor de Ticket — Oechsle Perú</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Segoe UI', Helvetica, sans-serif; background: #F7F8FA; color: #1a1a2e; }
+  body { font-family: 'Segoe UI', Helvetica, sans-serif; background: #F5F5F5; color: #25252E; }
 
-  header { background: #185FA5; color: white; text-align: center; padding: 20px 16px 16px; }
+  header { background: #FF0705; color: white; text-align: center; padding: 20px 16px 16px; }
   header h1 { font-size: 22px; margin-bottom: 4px; }
-  header p  { font-size: 13px; color: #B5D4F4; }
-  header small { font-size: 11px; color: #9FE1CB; display: block; margin-top: 4px; }
+  header p  { font-size: 13px; color: #FFD5D5; }
+  header small { font-size: 11px; color: #FFB3B3; display: block; margin-top: 4px; }
 
   .layout { display: flex; gap: 20px; padding: 20px; max-width: 1100px; margin: 0 auto; }
 
-  .card { background: white; border-radius: 10px; border: 1px solid #E5E7EB; padding: 16px 18px; margin-bottom: 12px; }
-  .card h3 { font-size: 12px; color: #6B7280; font-weight: 600; margin-bottom: 10px; text-transform: uppercase; letter-spacing: .5px; }
+  .card { background: white; border-radius: 10px; border: 1px solid #E5E5E5; padding: 16px 18px; margin-bottom: 12px; }
+  .card h3 { font-size: 12px; color: #777777; font-weight: 600; margin-bottom: 10px; text-transform: uppercase; letter-spacing: .5px; }
 
-  label { display: block; font-size: 12px; font-weight: 600; color: #374151; margin-bottom: 4px; margin-top: 10px; }
+  label { display: block; font-size: 12px; font-weight: 600; color: #444444; margin-bottom: 4px; margin-top: 10px; }
   select, input[type=range] { width: 100%; }
-  select { padding: 8px 10px; border: 1px solid #D1D5DB; border-radius: 6px; font-size: 14px; background: white; }
-  select:focus { outline: none; border-color: #185FA5; }
+  select { padding: 8px 10px; border: 1px solid #E5E5E5; border-radius: 6px; font-size: 14px; background: white; }
+  select:focus { outline: none; border-color: #FF0705; }
 
   .slider-row { display: flex; align-items: center; gap: 10px; }
-  input[type=range] { flex: 1; accent-color: #185FA5; }
-  .slider-val { min-width: 38px; text-align: right; font-weight: 700; color: #185FA5; font-size: 15px; }
+  input[type=range] { flex: 1; accent-color: #FF0705; }
+  .slider-val { min-width: 38px; text-align: right; font-weight: 700; color: #FF0705; font-size: 15px; }
 
   .col-left  { flex: 0 0 380px; }
   .col-right { flex: 1; }
 
-  #btn { width: 100%; padding: 13px; background: #185FA5; color: white; border: none;
+  #btn { width: 100%; padding: 13px; background: #FF0705; color: white; border: none;
          border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; margin-top: 4px; }
-  #btn:hover { background: #0C447C; }
+  #btn:hover { background: #BC0000; }
 
-  #resultado { background: #1D9E75; border-radius: 10px; color: white; text-align: center;
+  #resultado { background: #25252E; border-radius: 10px; color: white; text-align: center;
                padding: 18px; margin-bottom: 14px; }
   #resultado h2 { font-size: 26px; }
-  #resultado p  { font-size: 13px; color: #9FE1CB; margin-top: 6px; }
+  #resultado p  { font-size: 13px; color: #B5B5B5; margin-top: 6px; }
 
-  .chart-card { background: white; border-radius: 10px; border: 1px solid #E5E7EB; padding: 16px 18px; }
-  .chart-card h3 { font-size: 13px; font-weight: 700; color: #185FA5; margin-bottom: 14px; }
+  .chart-card { background: white; border-radius: 10px; border: 1px solid #E5E5E5; padding: 16px 18px; }
+  .chart-card h3 { font-size: 13px; font-weight: 700; color: #FF0705; margin-bottom: 14px; }
 
   .bar-row { display: flex; align-items: center; margin-bottom: 9px; font-size: 12px; }
-  .bar-label { flex: 0 0 130px; text-align: right; padding-right: 10px; color: #374151; font-size: 11px; }
-  .bar-track { flex: 1; position: relative; height: 22px; background: #F3F4F6; border-radius: 4px; overflow: hidden; }
+  .bar-label { flex: 0 0 130px; text-align: right; padding-right: 10px; color: #444444; font-size: 11px; }
+  .bar-track { flex: 1; position: relative; height: 22px; background: #F5F5F5; border-radius: 4px; overflow: hidden; }
   .bar-fill   { position: absolute; top: 3px; height: 16px; border-radius: 3px; transition: width .4s; }
-  .bar-fill.pos { background: #1D9E75; }
-  .bar-fill.neg { background: #D85A30; }
-  .bar-num { flex: 0 0 70px; padding-left: 8px; font-weight: 700; font-size: 11px; color: #374151; }
+  .bar-fill.pos { background: #3AB1C7; }
+  .bar-fill.neg { background: #BC0000; }
+  .bar-num { flex: 0 0 70px; padding-left: 8px; font-weight: 700; font-size: 11px; color: #444444; }
 
-  .placeholder { text-align: center; color: #9CA3AF; font-size: 14px; padding: 40px 0; }
+  .placeholder { text-align: center; color: #B5B5B5; font-size: 14px; padding: 40px 0; }
 
   @media (max-width: 700px) { .layout { flex-direction: column; } .col-left { flex: none; } }
 </style>
