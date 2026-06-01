@@ -40,7 +40,7 @@ cada componente escalaría en un entorno de Big Data real:
   ÁMBITO                   SOLUCIÓN BIG DATA           BENEFICIO
   ───────────────────────  ──────────────────────────  ────────────────────────────────
   Vista 360° del cliente   Data Lake en AWS S3 /       Unifica app, tienda física,
-                           Azure Data Lake             CMR y redes sociales en un
+                           Azure Data Lake             tarjeta oh! y redes sociales en un
                                                        perfil único por cliente
   Predicción en tiempo     Apache Kafka + Spark        El modelo predice el ticket
   real                     Streaming                   MIENTRAS el cliente navega,
